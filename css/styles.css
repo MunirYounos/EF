@@ -13,22 +13,53 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 /* responsive classes end*/
-
-
-
-
-
-
 .hello{
   font-size: 6rem;
   text-align: center;
-  color: indianred;
+  color: black;
   padding: 5rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px){
-  .hellow{
-    font-size: 3rem;
+  .hello{
+    font-size: 2.5rem;
   }
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav__link{
+  flex-grow: 1;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: snow;
+  transition: 1s ease-in-out all;
+
+}
+.nav__link:hover{
+  text-decoration: line-through;
+}
+
+.header{
+  display: block;
+  background: darkred;
+  padding: 2rem 0;
+}
+.header_cats{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 3rem;
+}
+.header_cats-sub{
+  flex-grow: 1;
+  background: yellow;
+  padding: 2rem;
+  margin-right: .1rem;
 }
